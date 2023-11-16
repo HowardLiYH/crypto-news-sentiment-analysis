@@ -12,5 +12,5 @@
 - Robustness Test: TBD
 
 
-### Part III. Operation and Development
+### Part III. Deployment
 - TBD

@@ -1,4 +1,4 @@
-# crypto-news-sentiment-analysis
+# 🐂 crypto-news-sentiment-analysis 🐻
 
 ![sentiment_pointer](https://camo.githubusercontent.com/fd0f81957c4db8f54e6b0069be9ce68ab497c795813e1c14bc2c62d79df6469e/68747470733a2f2f7777772e6d61726b65746d6f746976652e636f6d2f6d61726b65745f6d6f746976652f73656e74696d656e742d616e616c797369732e6a7067).
 

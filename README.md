@@ -8,7 +8,7 @@ To set up the environment for this project, please follow these steps:
 
 1. Clone the repository
 ```
-<git clone https://github.com/HowardLiYH/crypto-news-sentiment-analysis.git>
+git clone https://github.com/HowardLiYH/crypto-news-sentiment-analysis.git
 ```
 2. Navigate to the project directory:
 ```

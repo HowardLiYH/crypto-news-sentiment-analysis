@@ -12,6 +12,7 @@ sys.path.append(MODULE_DIR)
 
 
 news_titles_all = []
+news_titles_channel_specific = {}
 
 # Use glob to find all .py files in module_directory
 pattern = os.path.join(MODULE_DIR, "*.py")
@@ -29,11 +30,13 @@ for filepath in glob.glob(pattern):
 
     # Import the module using its name
     module = __import__(module_name)
+    news_titles_channel_specific['module_name.title()'] = []
 
     try:
         # If the module has an attribute get_news_titles, call it and extend the list
         if hasattr(module, 'get_news_titles'):
             news_titles = module.get_news_titles()
+            news_titles_channel_specific['module_name.title()'].append(news_titles)
             news_titles_all.extend(news_titles)
     except Exception as e:
         print(f"An error occurred {e} when obtaining News Data from {module_name}.")

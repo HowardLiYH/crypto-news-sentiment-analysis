@@ -1,0 +1,12 @@
+nltk
+
+# Download the VADER lexicon
+nltk.download('vader_lexicon')
+
+
+sys
+os
+glob
+
+requests
+bs4

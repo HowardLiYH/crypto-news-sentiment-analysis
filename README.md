@@ -22,12 +22,12 @@ After completing these steps, your environment will be set up with all the neces
 
 
 ## Part I. News Source
-- The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of over 40 News Sites
-- Over 1400 Total New Titles will be obtained in each iteration
-- For JSON Page Scraping will be TBD in the future
+- The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of over 40 News Sites ✅
+- Over 1400 Total New Titles will be obtained in each iteration ✅
+- Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "similarweb traffic checker" if need to ). Then scrape the recent month's views.
 
 ## Part II. Model Selection
-- NLP Model of choice: VADER (for now)
+- NLP Model of choice: VADER (for now) ✅
 - Considering fine-tuning an advanced word embedding method of choice (BERT or RoBERTa, GPT-2 or GPT-3)
 - Robustness Test: TBD
 

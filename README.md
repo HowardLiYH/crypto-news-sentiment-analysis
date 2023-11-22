@@ -6,15 +6,15 @@
 
 To set up the environment for this project, please follow these steps:
 
-1. Clone the repository
+- Clone the repository
 ```
 git clone https://github.com/HowardLiYH/crypto-news-sentiment-analysis.git
 ```
-2. Navigate to the project directory:
+- Navigate to the project directory:
 ```
 cd crypto-news-sentiment-analysis
 ```
-3. Install the required dependencies:
+- Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```

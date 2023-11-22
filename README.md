@@ -23,7 +23,7 @@ After completing these steps, your environment will be set up with all the neces
 
 ## Part I. News Source
 - The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of over 40 News Sites ✅
-- Over 1400 Total New Titles will be obtained in each iteration ✅
+- News titles: Over 1400 Total New Titles will be obtained in each iteration ✅
 - Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "similarweb traffic checker" if need to ). Then scrape the recent month's views.
 
 ## Part II. Model Selection

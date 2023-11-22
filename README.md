@@ -28,7 +28,7 @@ After completing these steps, your environment will be set up with all the neces
 
 ## Part II. Model Selection
 - NLP Model of choice: VADER (for now) ✅
-- Considering fine-tuning an advanced word embedding method of choice (BERT or RoBERTa, GPT-2 or GPT-3)
+- Considering fine-tuning an advanced word embedding method of choice (BERT): CryptoBERT https://huggingface.co/ElKulako/cryptobert
 - Robustness Test: TBD
 
 

@@ -8,7 +8,8 @@
 - For JSON Page Scraping will be TBD in the future
 
 ### Part II. Model Selection
-- NLP Model of choice: TBD
+- NLP Model of choice: VADER (for now)
+- Considering fine-tuning an advanced word embedding methods of choice (BERT or RoBERTa, GPT-2 or GPT-3)
 - Robustness Test: TBD
 
 

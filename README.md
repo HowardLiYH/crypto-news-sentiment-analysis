@@ -127,7 +127,7 @@ Output Top Five Most Bullish Websites and Top Five Most Bearish Websites compute
 <br />
 <br />
 
-## Version 3.0 Deployment
+## Version 3.0 GUI
 - Streamlit for display
 
 

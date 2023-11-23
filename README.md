@@ -47,30 +47,60 @@ Scraping over 42 News Sites with Beautiful Soup and collecting Crypto-related Ne
 
 Output Top Five Most Bullish Websites and Top Five Most Bearish Websites computed by [VADER's compound polarity score](https://github.com/cjhutto/vaderSentiment) 
 ```
-The compound score is computed by summing the valence scores of each word in the lexicon, adjusted according to the
-rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive).
+🐂 The top five sites with the most positive news sentiments 🐂 
 
-This is the most useful metric if you want a single unidimensional measure of sentiment for a given sentence.
-Calling it a 'normalized, weighted composite score' is accurate.
+1. Timesofindia: 9.1966  
 
-It is also useful for researchers who would like to set standardized thresholds for classifying sentences as either
-positive, neutral, or negative. Typical threshold values (used in the literature cited on this page) are:
+2. Coindesk: 6.5571  
 
-positive sentiment: compound score >= 0.05
-neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
-negative sentiment: compound score <= -0.05
-NOTE: The compound score is the one most commonly used for sentiment analysis by most researchers,
-including the authors.
+3. Blockworks: 6.441  
+
+4. Apnews: 5.6808  
+
+5. Cointelegraph: 4.7013
+
+
+🐻 The top five sites with the most negative news sentiments 🐻  
+
+1. Newyorkpost: -11.1883  
+
+2. Dailymail: -10.8058  
+
+3. Nbc: -6.9758  
+
+4. Buzzfeed: -6.8161  
+
+5. Washingtonpost: -5.9181  
 ```
 
 
 <br />
 <br />
 
-## Version 2.0 Token-specific News Sources & Industry-wide News Aggregation
-- Given the input token name to search for Token-specific News from the 42 News Sites
-- Gather ❓ amount of data for each search
-- Calculate each token's weighted sentiment given the below formulas
+## Version 2.0 Token News and Industry News Aggregation 🔜
+
+**Target Platform:** 5 cryptocurrency market tracking websites
+- CoinMarketCap, CoinGecko, Livecoinwatch.com, Coincodex, CryptoCompare
+
+<br />
+
+**Methodology:** 
+- Obtain Coin-specific News
+- Obtain Coin-specific Media Post (Twitter & Reddit)
+- Obtain Industry News from the Coincodex News Aggregation Site
+
+<br />
+
+**Model:** 
+
+- Option 1: [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
+- Option 2: [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
+
+
+<br />
+
+**Result:** TBD
+
 <br />
 
 **The $`ith`$  Industry-wide News Source Polarity Score:** $$S_i(Industry)$$

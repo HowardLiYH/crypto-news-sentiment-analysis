@@ -21,13 +21,13 @@ pip install -r requirements.txt
 After completing these steps, your environment will be set up with all the necessary dependencies! 🙆
 
 
-## Version 1.0 Collecting Industry-wide News Sources (News Titles) ✅
+## Version 1.0 Industry-wide News Sources  ✅
 - The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of 42 News Sites ✅
 - News titles: Over 1400 Total New Titles will be obtained in each iteration ✅
 - NLP Model of choice: VADER ✅
 
 
-## Version 1.5  Collecting Token-specific News Sources (News Titles)
+## Version 1.5 Token-specific News Sources 
 - Given the input token name to search for Token-specific News from the 42 News Sites
 - Gather ❓ amount of data for each search
 - Calculate each token's weighted sentiment given the below formulas
@@ -47,5 +47,10 @@ After completing these steps, your environment will be set up with all the neces
 ## Version 2.5 More Sources
 - Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "Similar Web traffic checker" if need to ). Then scrape the recent month's views.
 - YouTube Comments: Since Twitter and Reddit API are prohibited from free use, we can consider using YouTube API to search for "Today" News choose the top five results from the search, and scrape their comment sections to produce a general sentiment from the viewers. 
+
+  
+## Version 3.0 Deployment
+- Streamlit for display
+
 
 

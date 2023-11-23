@@ -21,25 +21,31 @@ pip install -r requirements.txt
 After completing these steps, your environment will be set up with all the necessary dependencies! 🙆
 
 
-## Part I. News Source
-- The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of over 40 News Sites ✅
+## Version 1.0 Collecting Industry-wide News Sources (News Titles) ✅
+- The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of 42 News Sites ✅
 - News titles: Over 1400 Total New Titles will be obtained in each iteration ✅
-- Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "similarweb traffic checker" if need to ). Then scrape the recent month's views.
-
-## Part II. Model Selection
-- NLP Model of choice: VADER (for now) ✅
-- Considering fine-tuning an advanced word embedding method of choice (BERT): CryptoBERT https://huggingface.co/ElKulako/cryptobert
-- Robustness Test: TBD
+- NLP Model of choice: VADER ✅
 
 
-## Part III. Deployment
-- Setting Up a Web Framework
-     - Framework: Django
-     - Create a Web Application: defining routes, templates, and static files
-- Streaming Data to the Website
-     - API Endpoint: Create an API endpoint in your web application that returns the scraped data, usually in JSON format.
-     - Updating Data: Decide on a method to update the data. It could be a scheduled task (using something like Celery) or triggered by user action.
-     - Front-end Development: Use JavaScript (possibly with a library/framework like React or Vue.js) to fetch and display the streamed data on the client side.
-- Deployment
-     - Choose a Hosting Service: Options include Heroku, AWS, or Google Cloud.
-     - Deploy Your Application: Follow the hosting service’s guidelines to deploy your web application.
+## Version 1.5  Collecting Token-specific News Sources (News Titles)
+- Given the input token name to search for Token-specific News from the 42 News Sites
+- Gather ❓ amount of data for each search
+- Calculate each token's weighted sentiment given the below formulas
+<br />
+
+**The $`ith`$  Industry-wide News Source Polarity Score:** $$S_i(Industry)$$
+**The $`ith`$  Token-specific News Source Polarity Score:** $$S_i(Token)$$
+**The $`Total`$  Industry-wide News Source Polarity Score:** $$S_{Total}(Industry) = \sum_{i=1}^m |S_i(Industry)|$$
+**The $`Weighted`$ Token-specific News Source Polarity Score:** $$S_{weighted}(Token) = \sum_{i=1}^m [ \log \frac{S_i(Industry)}{S_{Total}(Industry)} + \log S_i(Token)]$$
+
+
+## Version 2.0  Model Upgrade
+- Considering fine-tuning an advanced word embedding method of choice (BERT): [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
+- Conduct a Robustness Test (if possible)
+
+  
+## Version 2.5 More Sources
+- Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "Similar Web traffic checker" if need to ). Then scrape the recent month's views.
+- YouTube Comments: Since Twitter and Reddit API are prohibited from free use, we can consider using YouTube API to search for "Today" News choose the top five results from the search, and scrape their comment sections to produce a general sentiment from the viewers. 
+
+

@@ -24,14 +24,50 @@ After completing these steps, your environment will be set up with all the neces
 <br />
 
 ## Version 1.0 Industry-wide News Sources  ✅
-- The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of 42 News Sites ✅
-- News titles: Over 1400 Total New Titles will be obtained in each iteration ✅
-- NLP Model of choice: VADER ✅
+**Target Platform:** 42 News Sites 
+- Cointelegraph, The Block, Decrypt, The Defiant, CoinDesk, Blockworks, Blockchain News, BeInCrypto, CNBC Blockchain News, Blockchain.com, Yahoo News Crypto Section, Techcrunch Blockchain Section, Economic Times, Forbes
+- Financial Times, Independent, The blockchain.com, The Conversation, Cryptonews, Wired, Fox Business, Crypto News Net, AP News, The Indian Express, The Time of India, BBC News, News Now, Blockchain Magazine
+- CCN, Washington Post, New York Times, Bezinga, Google News, New York Post, People.com, NBC News, Daily Mail, The Guardian, Wall Street Journal, Buzzfeed, MarketWatch, Fortune 
+
+<br />
+
+**Methodology:** 
+
+Scraping over 42 News Sites with Beautiful Soup and collecting Crypto-related News Titles from the selected pages. Each iteration can obtain over 1400 the most recent New Titles.
+
+<br />
+
+**Model:** 
+
+[NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
+
+<br />
+
+**Result:** 
+
+Output Top Five Most Bullish Websites and Top Five Most Bearish Websites computed by [VADER's compound polarity score](https://github.com/cjhutto/vaderSentiment) 
+```
+The compound score is computed by summing the valence scores of each word in the lexicon, adjusted according to the
+rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive).
+
+This is the most useful metric if you want a single unidimensional measure of sentiment for a given sentence.
+Calling it a 'normalized, weighted composite score' is accurate.
+
+It is also useful for researchers who would like to set standardized thresholds for classifying sentences as either
+positive, neutral, or negative. Typical threshold values (used in the literature cited on this page) are:
+
+positive sentiment: compound score >= 0.05
+neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
+negative sentiment: compound score <= -0.05
+NOTE: The compound score is the one most commonly used for sentiment analysis by most researchers,
+including the authors.
+```
+
 
 <br />
 <br />
 
-## Version 1.5 Token-specific News Sources 
+## Version 2.0 Token-specific News Sources & Industry-wide News Aggregation
 - Given the input token name to search for Token-specific News from the 42 News Sites
 - Gather ❓ amount of data for each search
 - Calculate each token's weighted sentiment given the below formulas
@@ -45,7 +81,7 @@ After completing these steps, your environment will be set up with all the neces
 <br />
 <br />
 
-## Version 2.0  Model Upgrade
+## Version 2.2  Model Upgrade
 - Considering fine-tuning an advanced word embedding method of choice (BERT): [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
 - Conduct a Robustness Test (if possible)
 

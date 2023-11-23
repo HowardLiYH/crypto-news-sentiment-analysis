@@ -20,12 +20,16 @@ pip install -r requirements.txt
 ```
 After completing these steps, your environment will be set up with all the necessary dependencies! 🙆
 
+<br />
+<br />
 
 ## Version 1.0 Industry-wide News Sources  ✅
 - The Scraping was conducted with Beautiful Soup from the stationary front page News Titles of 42 News Sites ✅
 - News titles: Over 1400 Total New Titles will be obtained in each iteration ✅
 - NLP Model of choice: VADER ✅
 
+<br />
+<br />
 
 ## Version 1.5 Token-specific News Sources 
 - Given the input token name to search for Token-specific News from the 42 News Sites
@@ -38,17 +42,24 @@ After completing these steps, your environment will be set up with all the neces
 **The $`Total`$  Industry-wide News Source Polarity Score:** $$S_{Total}(Industry) = \sum_{i=1}^m |S_i(Industry)|$$
 **The $`Weighted`$ Token-specific News Source Polarity Score:** $$S_{weighted}(Token) = \sum_{i=1}^m [ \log \frac{S_i(Industry)}{S_{Total}(Industry)} + \log S_i(Token)]$$
 
+<br />
+<br />
 
 ## Version 2.0  Model Upgrade
 - Considering fine-tuning an advanced word embedding method of choice (BERT): [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
 - Conduct a Robustness Test (if possible)
 
+<br />
+<br />
   
 ## Version 2.5 More Sources
 - Website Views: Use Selenium to go to Similarweb Website Analysis Dashboard (Google "Similar Web traffic checker" if need to ). Then scrape the recent month's views.
 - YouTube Comments: Since Twitter and Reddit API are prohibited from free use, we can consider using YouTube API to search for "Today" News choose the top five results from the search, and scrape their comment sections to produce a general sentiment from the viewers. 
 
-  
+
+<br />
+<br />
+
 ## Version 3.0 Deployment
 - Streamlit for display
 

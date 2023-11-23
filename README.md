@@ -88,6 +88,7 @@ Output Top Five Most Bullish Websites and Top Five Most Bearish Websites compute
 - Obtain Coin-specific News
 - Obtain Coin-specific Media Post (Twitter & Reddit)
 - Obtain Industry News from the Coincodex News Aggregation Site
+- Place Weights to the Polarity Score referenced from [Semrush](https://www.semrush.com/website/coinmarketcap.com/competitors/)
 
 <br />
 

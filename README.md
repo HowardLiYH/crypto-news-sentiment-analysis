@@ -26,9 +26,9 @@
 <br />
 
 **Methodology:** 
-- Obtain Coin-specific News
-- Obtain Coin-specific Media Post (Twitter & Reddit)
-- Obtain Industry News from the Coincodex News Aggregation Site
+- Obtain Coin-specific News from the above 5 platforms through APIs (if not attempt Selenium)
+- Obtain Coin-specific Media Post (Twitter or Reddit) from the above 5 platforms through APIs (if not attempt Selenium)
+- Obtain Industry News from the [Coincodex News Aggregation Site](https://coincodex.com/news/)
 - Place Weights to the Polarity Score referenced from [Semrush](https://www.semrush.com/website/coinmarketcap.com/competitors/)
 
 <br />
@@ -40,7 +40,7 @@
 
 <br />
 
-**Result:** TBD
+**Result: ** TBA
 
 <br />
 

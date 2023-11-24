@@ -14,37 +14,13 @@
 
 <br />
 
-  - **Model:** [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
+  - **Model:**
+    - [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
+    - Pre-trained Transformer Model [CryptoBERT](https://huggingface.co/ElKulako/cryptobert) 
 
 <br />
 
-  - **Result:** Output Top Five Most Bullish Websites and Top Five Most Bearish Websites computed by [VADER's compound polarity score](https://github.com/cjhutto/vaderSentiment) 
-```
-🐂 The top five sites with the most positive news sentiments 🐂 
-
-1. Timesofindia: 9.1966  
-
-2. Coindesk: 6.5571  
-
-3. Blockworks: 6.441  
-
-4. Apnews: 5.6808  
-
-5. Cointelegraph: 4.7013
-
-
-🐻 The top five sites with the most negative news sentiments 🐻  
-
-1. Newyorkpost: -11.1883  
-
-2. Dailymail: -10.8058  
-
-3. Nbc: -6.9758  
-
-4. Buzzfeed: -6.8161  
-
-5. Washingtonpost: -5.9181  
-```
+  - **Result:** Output Top Five Most Bullish Websites and Top Five Most Bearish Websites 
 
 
 <br />

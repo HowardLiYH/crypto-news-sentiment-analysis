@@ -13,7 +13,12 @@
 - **Methodology and Ouput:**
     - Scraping over 42 News Sites with Beautiful Soup and collecting Crypto-related News Titles from the selected pages. Each iteration can obtain over 1400 of the most recent New Titles. We attempted two NLP Models, [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html) and a Pre-trained Transformer Model [CryptoBERT](https://huggingface.co/ElKulako/cryptobert). We decided to proceed with the Transformer Model as it's trained on a wide range of crypto-related datasets and is fine-tuned specifically for crypto sentiment analysis. Our output will determine the sentiment bias of the 42 websites of our choice and rank the Top 5 Sites with Bullish sentiment and the Top 5 with Bearish sentiment.
     - Check out sample result in ouput_vader.ipynb and ouput_cryptobert.ipynb inside [Version 1.0 folder](https://github.com/HowardLiYH/crypto-news-sentiment-analysis/tree/main/version_1.0_Industry_wide_News)
+ 
+<br />
 
+- **Weakness**
+  - Testing the robustness of the output result requires obtaining the mass labeling and verifying the result by each. For practical use, one can gather all the obtainable news websites and calculate the overall industry polarity. However, for this approach, some weights on the polarity score should be considered as each website experiences different traffic. One way of obtaining such information without paying for the analytical website is writing a Selenium script and directing it to [Similarweb.com](https://pro.similarweb.com/#/digitalsuite/home), finding monthly visits, and adjusting the weights based on *traffic portion for each website multiplied by the given website polarity score*. The calculated overall polarity score can be used as log weights for Token-specific news we will calculate in Version 2.0 or weighted factors in other dimensional analysis experiments.
+  - Based on the above reason, the output should be used or implemented under careful consideration of the above constructions.
 
 <br />
 <br />

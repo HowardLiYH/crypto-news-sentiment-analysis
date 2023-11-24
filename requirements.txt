@@ -1,12 +1,13 @@
-nltk
-
-# Download the VADER lexicon
-nltk.download('vader_lexicon')
-
-
 sys
 os
 glob
-
 requests
 bs4
+
+# Download the VADER lexicon
+nltk
+nltk.download('vader_lexicon')
+
+# Pre-trained Transformer CryptoBert
+torch torchvision torchaudio
+transformers

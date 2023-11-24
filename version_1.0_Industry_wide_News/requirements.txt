@@ -1,13 +1,15 @@
+# Version 1.0 Industry-wide News
+
 sys
 os
 glob
 requests
 bs4
 
-# Download the VADER lexicon
+## Download the VADER lexicon
 nltk
 nltk.download('vader_lexicon')
 
-# Pre-trained Transformer CryptoBert
+## Pre-trained Transformer CryptoBert
 torch torchvision torchaudio
 transformers

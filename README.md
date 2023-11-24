@@ -67,8 +67,7 @@
 
 **Model:** 
 
-- Option 1: [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
-- Option 2: [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
+- [CryptoBERT](https://huggingface.co/ElKulako/cryptobert) ✅
 
 
 <br />

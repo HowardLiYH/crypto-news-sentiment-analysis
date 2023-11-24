@@ -12,6 +12,7 @@
 
 - **Methodology and Ouput:**
     - Scraping over 42 News Sites with Beautiful Soup and collecting Crypto-related News Titles from the selected pages. Each iteration can obtain over 1400 of the most recent New Titles. We attempted two NLP Models, [NLTK.sentiment.vader](https://www.nltk.org/_modules/nltk/sentiment/vader.html) and a Pre-trained Transformer Model [CryptoBERT](https://huggingface.co/ElKulako/cryptobert). We decided to proceed with the Transformer Model as it's trained on a wide range of crypto-related datasets and is fine-tuned specifically for crypto sentiment analysis. Our output will determine the sentiment bias of the 42 websites of our choice and rank the Top 5 Sites with Bullish sentiment and the Top 5 with Bearish sentiment.
+    - Check out sample result in ouput_vader.ipynb and ouput_cryptobert.ipynb inside [Version 1.0 folder](https://github.com/HowardLiYH/crypto-news-sentiment-analysis/tree/main/version_1.0_Industry_wide_News)
 
 
 <br />

@@ -16,7 +16,7 @@
  
 <br />
 
-- **Weakness**
+- **Weakness and Improvement**
   - Testing the robustness of the output result requires obtaining the mass labeling and verifying the result by each. For practical use, one can gather all the obtainable news websites and calculate the overall industry polarity. However, for this approach, some weights on the polarity score should be considered as each website experiences different traffic. One way of obtaining such information without paying for the analytical website is writing a [Selenium](https://www.selenium.dev/documentation/) script and directing it to [Similarweb.com](https://pro.similarweb.com/#/digitalsuite/home), finding monthly visits, and adjusting the weights based on *traffic portion for each website multiplied by the given website polarity score*. The calculated overall polarity score can be used as log weights for Token-specific news we will calculate in Version 2.0 or weighted factors in other dimensional analysis experiments.
   - Based on the above reason, the output should be used or implemented under careful consideration of the above constructions.
 
